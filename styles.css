@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sketchpad {
+    flex: none;
+    display: flex;
+    min-height: 400px;
+    min-width: 600px;
+    border-width: 80px;
+    border-style: solid;
+    border-color: red;
+}
+.container, html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.pix {
+    background-color: lightgrey;
+    flex:1;
+}
