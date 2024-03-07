@@ -1,13 +1,18 @@
-const sketchpad = document.querySelector('.sketchpad');
+const sketchpad = document.querySelector(".sketchpad");
 
-var fragment = document.createDocumentFragment();
+// var fragment = document.createDocumentFragment();
+const makeGrid = (size) => {
+  for (let i = 0; i < size * size; i++) {
+    const pix = document.createElement("div");
+    pix.setAttribute("class", "pix");
+    pix.addEventListener(
+      "mouseover",
+      () => (pix.style.backgroundColor = "black")
+    );
+    sketchpad.appendChild(pix);
+    console.log("adding div");
+  }
+};
 
-const pix = document.createElement('div');
-pix.setAttribute('style', 'pix');
-
-for (let i = 1; 1 < 16 * 16 - 1; i++) {
-    const clonedPix = document.createElement('div');
-    fragment.appendChild(clonedPix);
-}
-
-sketchpad.appendChild(fragment);
+makeGrid(16);
+// sketchpad.appendChild(fragment);

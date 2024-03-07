@@ -4,13 +4,14 @@
     justify-content: center;
 }
 .sketchpad {
-    flex: none;
     display: flex;
+    flex-wrap: wrap;
     min-height: 400px;
     min-width: 600px;
     border-width: 80px;
     border-style: solid;
     border-color: red;
+    border-radius: 20px;
 }
 .container, html, body {
     margin: 0;
@@ -18,6 +19,7 @@
 }
 
 .pix {
-    background-color: lightgrey;
-    flex:1;
+    background-color: lightgray;
+    flex: auto;
+    min-width: 6.25%;
 }
