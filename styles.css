@@ -5,13 +5,23 @@
 }
 .sketchpad {
     display: flex;
-    flex-wrap: wrap;
-    min-height: 400px;
-    min-width: 600px;
+    flex-direction: column;
     border-width: 80px;
     border-style: solid;
     border-color: red;
+    background-color: red;
     border-radius: 20px;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+    min-width: 600px;
+}
+.controls {
+    flex:1;
+    display: flex;
+    justify-content: center;
 }
 .container, html, body {
     margin: 0;
