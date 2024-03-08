@@ -11,6 +11,7 @@
     border-color: red;
     background-color: red;
     border-radius: 20px;
+    gap: 1rem;
 }
 .grid {
     display: flex;
@@ -19,7 +20,7 @@
     min-width: 600px;
 }
 .button {
-    margin: 20px;
+    background-color: burlywood;
 }
 .controls {
     flex:1;
@@ -32,7 +33,7 @@
 }
 
 .pix {
-    background-color: lightgray;
+    background-color: #d3d3d3;
     flex: auto;
     min-width: 6.25%;
 }
